@@ -2,8 +2,8 @@ import time
 import pyupbit
 import datetime
 
-access = ""     # 본인 값으로 변경
-secret = ""     # 본인 값으로 변경
+access = ""    # 본인 값으로 변경
+secret = ""    # 본인 값으로 변경
 
 ticker_list = ["KRW-BTC", "KRW-ETH"]
 
