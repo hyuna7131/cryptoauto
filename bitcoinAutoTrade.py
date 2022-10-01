@@ -2,8 +2,8 @@ import time
 import pyupbit
 import datetime
 
-access = "3XjTDA63jyBglWlcI2cNkBpeXZjgG6QiMHwMXJLy"    # 본인 값으로 변경
-secret = "U321dxF1KNVi69OJGbx0VQFRxozWWnLjCkq6G4J9"    # 본인 값으로 변경
+access = ""    # 본인 값으로 변경
+secret = ""    # 본인 값으로 변경
 
 ticker_list = ["KRW-BTC", "KRW-ETH"]
 
@@ -55,7 +55,6 @@ while True:
         if start_time < now < end_time - datetime.timedelta(seconds=10):
             target_price = get_target_price("KRW-BTC")
             current_price = get_current_price("KRW-BTC")
-            print(f"target price: {target_price}\ncurrent price: {current_price}") ###
             if target_price < current_price:
                 krw = get_balance("KRW")
                 if krw > 5000:
